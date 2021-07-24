@@ -5,7 +5,6 @@
  */
 package com.example.demo;
 
-import com.example.demo.web.HomeController;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -20,7 +19,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(HomeController.class)
+@WebMvcTest
 public class HomeControllerTest {
 
     @Autowired

@@ -57,7 +57,7 @@
     <input type="text" th:field="*{ccExpiration}"/>
     <span th:class="validationError"
           th:if="${#fields.hasErrors('ccExpiration')}"
-          th:errors="*{ccExpiration}">enter a valid date</span>
+          th:errors="*{ccExpiration}">Date format is MM/YY</span>
     <br/>
     <label for="ccCVV">CVV: </label>
     <input type="text" th:field="*{ccCVV}"/>
